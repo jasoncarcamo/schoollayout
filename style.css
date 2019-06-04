@@ -1,0 +1,408 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: .04em solid lightgray;
+}
+
+#logo{
+    height: 100%;
+    width: 7.8em;
+    margin-left: 5%;
+}
+
+.indent{
+    margin-left: 1em;
+}
+
+
+
+
+
+h2{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Mobile view*/
+@media screen and (max-width: 750px){
+    #header{
+        width: 100%;
+        height: 2.5em;
+        background-color: white;
+    }
+
+    #main-section{
+        width: 100%;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #mobile-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+    
+
+    #desktop-nav{
+        display: none;
+    }
+
+    .desktop-view{
+        display: none;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    /*Header section*/
+    #section-header{
+        width: 100%;
+        background-color: lightgrey;
+    }
+
+    #section-header img{
+        width: 100%;
+    }
+
+    #section-header h1{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        font-size: 2em;
+        width: 60%; 
+    }
+
+    #section-header button{
+        width:90%;
+        margin: 1.1em auto 2em 1.4em;
+        height: 3em;
+        background-color: rgb(139, 148, 158);
+        border: none;
+        color: white;
+        font-size: 1.1em;
+    }
+
+    /*orientation section*/
+    #orientation-section{
+        width: 100%;
+    }
+
+    #orientation-section div{
+        margin-bottom: 3em;
+    }
+
+    #orientation-section img{
+        width: 90%;
+        margin: 1.5em 0 .4em 1.5em;
+    }
+
+    .indentxs{
+        margin-left: 2.5em;
+    }
+
+    /*learning section*/
+    #learning-section header h2{
+        text-align: center;
+    }
+
+    #learning-section section div{
+        background-color: lightgrey;
+        width: 95%;
+        height: 3.6em;
+        margin: 0 auto 0 auto;
+    }
+
+    #learning-section section h3{
+        width: 90%;
+        padding: 1em;
+    }
+
+    /*Thesis section*/
+    #thesis-section{
+        width: 100%;
+    }
+
+    video{
+        width: 100%;
+        height: 30em;
+    }
+
+    /*Footer*/
+    footer{
+        border-top: 1px solid rgb(231, 229, 229);
+        width: 100%;
+    }
+    
+    .div1{
+        float: left;
+        width: 40%;
+        margin-left: 3%;
+    }
+
+    .div2{
+        float: right;
+        width: 40%;
+        text-align: right;
+        margin: 3% 0 auto 0;
+    }
+
+    .div2 a{
+        margin-left: 3%;
+        margin-right: 5%;
+    }
+}
+
+
+
+/*Desktop view*/
+@media screen and (min-width: 751px){
+
+    #header{
+        width: 100%;
+        height: 3.5em;
+        background-color: white;
+    }
+
+    #logo{
+        float: left;
+    }
+
+    #mobile-nav{
+        display: none;
+    }
+
+    .mobile-view{
+        display: none;
+    }
+
+    /*Desktop nav bar*/
+    #desktop-nav{
+        width: 40%;
+        float: right;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    #desktop-nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+    }
+
+    /*Section header*/
+    #section-header{
+        width: 100%;
+        background-color: lightgrey;
+        height: 40em;
+        text-align: center;
+    }
+
+    #section-header > img{
+        width: 59%;
+        float: left;
+        margin: 7% 0 auto 0;
+    }
+
+    #section-header div{
+        width: 40%;
+        float: right;
+        margin-top: 20%;
+
+    }
+
+    #section-header h1{
+        font-size: 2em;
+        margin-left: -2%;
+    }
+
+    #section-header p{
+        margin-left: -2%;
+    }
+
+    
+
+    #section-header button{
+        width:35%;
+        margin: 1.1em auto 2em 1.4em;
+        height: 3em;
+        background-color: rgb(139, 148, 158);
+        border: none;
+        color: white;
+        font-size: 1.1em;
+    }
+
+    /*second section*/
+    .guestimg{
+        width: 100%;
+    }
+
+    #second-section{
+        width: 100%;
+    }
+
+    
+
+    .section2img{
+        display: block;
+        width: 130%;
+    }
+
+    .section2header{
+        float: left;
+        width: 70%;
+        margin: 5%;
+        
+    }
+
+    .section2header p, h2{
+        text-align: left;
+        width: 95%;
+    }
+
+    .hrhr{
+        width: 100%;
+        float: left;
+        margin-top: 15%;
+    }
+
+    /*orientation section*/
+    #orientation-section{
+        width: 40%;
+        margin: 0 auto;
+        padding: 5% 0;
+        height: auto;
+        text-align: center;
+    }
+
+    #orientation-section div{
+        
+        margin: 5% auto;
+    }
+
+
+    /*start learning section*/
+    #learning-section{
+        width: 100%;
+        background-color: rgb(139, 148, 158);
+        padding: 5% 0;
+    }
+
+    #learning-section header h2{
+        text-align: center;
+        margin: 2% auto 5% auto;
+    }
+
+    .learn-grid{
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr;
+        grid-gap: 1em;
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .learn-grid div{
+        width: 100% ;
+        background-color: white;
+        text-align: center;
+    }
+    .learn-grid div *{
+        margin: 5% auto;
+    }
+
+    .learn-grid img{
+        width: 100%;
+        margin: 0 !important;
+    }
+
+
+    /*Thesis section*/
+    #thesis-section{
+        width: 100%;
+        margin: 0;
+        padding: 3% 0;
+    }
+
+    #thesis-section header h2{
+        text-align: center;
+        margin: 8% auto;
+    }
+
+    .video-section{
+        display: inline-block;
+        width: 55%;
+        padding-left: 1%;
+        border: 1px solid rgb(231, 229, 229);
+    }
+
+    .video-section video{
+        width: 100%;
+        
+    }
+
+    .flex-dis{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        float: right;
+        text-align: center;
+        padding-right: 1%;
+        width: 40%   }
+
+    .flex-dis section p{
+        width: 90%;
+    }
+
+    .flex-dis section img{
+        width: 100%;
+        height: 15em;
+    }
+    .flex-dis section{
+        border: 1px solid rgb(231, 229, 229);
+        margin-bottom: 5%;
+        width: 95%;
+        height: 25em;
+    }
+
+    
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly; 
+        width: 100%;
+        margin-top: 10%;
+        border-top: 1px solid lightgrey;
+        padding: 2% 0;
+    }
+
+    footer div{
+        width: 50%;
+        margin: auto auto;
+    }
+
+    .div2{
+        text-align: right;
+    }
+
+    .div2 a{
+        margin: 0 5%;
+    }
+}
+
